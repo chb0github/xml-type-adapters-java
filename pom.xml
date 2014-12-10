@@ -7,8 +7,8 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>Webservices Core</name>
-    <description>Core classes to be shared amongst all webservice implementations</description>
+    <name>Java XML Adapters</name>
+    <description>XmlAdapters for core java date stuff. </description>
     <url>https://github.com/chb0github/</url>
 
     <licenses>
@@ -28,8 +28,8 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:chb0github/ws-core.git</connection>
-        <url>https://github.com/chb0github/ws-core/</url>
+        <connection>scm:git:git@github.com:chb0github/xml-type-adapters-java.git</connection>
+        <url>https://github.com/chb0github/xml-type-adapters-java/</url>
     </scm>
     <dependencies>
 
