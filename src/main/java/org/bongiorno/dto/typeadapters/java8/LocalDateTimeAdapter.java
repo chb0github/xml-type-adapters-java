@@ -7,14 +7,14 @@ import java.time.format.DateTimeFormatter;
 /**
  * @author chribong
  */
-public class DateTimeAdapter extends AbstractJava8Adapter<LocalDateTime>{
+public class LocalDateTimeAdapter extends AbstractJava8Adapter<LocalDateTime>{
 
 
-    public DateTimeAdapter() {
+    public LocalDateTimeAdapter() {
         super.formatter = DateTimeFormatter.ISO_DATE_TIME;
     }
 
-    public DateTimeAdapter(String format) {
+    public LocalDateTimeAdapter(String format) {
         super.formatter = DateTimeFormatter.ofPattern(format);
     }
 

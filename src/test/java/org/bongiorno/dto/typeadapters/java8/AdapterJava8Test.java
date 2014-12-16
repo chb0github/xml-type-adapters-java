@@ -15,7 +15,7 @@ public class AdapterJava8Test {
 
     @Test
     public void testDateTime() throws Exception {
-        DateTimeAdapter adapter = new DateTimeAdapter();
+        LocalDateTimeAdapter adapter = new LocalDateTimeAdapter();
         LocalDateTime expected = LocalDateTime.of(1976, 9, 10, 9, 0, 0);
 
         String expectedStr = "1976-09-10T09:00:00";
@@ -28,7 +28,7 @@ public class AdapterJava8Test {
 
     @Test
     public void testDateTimeWFormat() throws Exception {
-        DateTimeAdapter adapter = new DateTimeAdapter("yyyyMMdd-HHmmss");
+        LocalDateTimeAdapter adapter = new LocalDateTimeAdapter("yyyyMMdd-HHmmss");
         LocalDateTime expected = LocalDateTime.of(1976, 9, 10, 9, 0, 0);
 
         String expectedStr = "19760910-090000";

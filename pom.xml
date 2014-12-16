@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.bongiorno.dto.typadapters</groupId>
-    <artifactId>core-java</artifactId>
+    <artifactId>xml-type-adapters-java</artifactId>
     <version>1.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 

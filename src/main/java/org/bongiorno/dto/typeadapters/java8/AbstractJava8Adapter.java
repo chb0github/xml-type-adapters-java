@@ -5,11 +5,12 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.time.temporal.TemporalAccessor;
+import java.util.function.Function;
 
 /**
  * @author chribong
  */
-public abstract class AbstractJava8Adapter<T extends TemporalAccessor> extends XmlAdapter<String,T> {
+public abstract class AbstractJava8Adapter<T extends TemporalAccessor> extends XmlAdapter<String,T> implements Function<T,String> {
 
     protected DateTimeFormatter formatter;
 
@@ -30,5 +31,14 @@ public abstract class AbstractJava8Adapter<T extends TemporalAccessor> extends X
     @Override
     public String marshal(T v) throws Exception {
         return formatter.format(v);
+    }
+
+    @Override
+    public String apply(T t) {
+        try {
+            return marshal(t);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
