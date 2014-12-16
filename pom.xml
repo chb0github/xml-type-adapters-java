@@ -4,7 +4,7 @@
 
     <groupId>org.bongiorno.dto.typadapters</groupId>
     <artifactId>xml-type-adapters-java</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
 
     <name>Java XML Adapters</name>
