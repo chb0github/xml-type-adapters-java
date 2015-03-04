@@ -10,10 +10,10 @@ import java.util.Date;
 /**
  * @author chribong
  */
-public class AbstractDateAdapter extends XmlAdapter<String, Date>  {
+public class DefaultDateAdapter extends XmlAdapter<String, Date>  {
     private DateFormat formatter = new SimpleDateFormat("yyyyMMddHHmm");
 
-    public AbstractDateAdapter(String format) {
+    public DefaultDateAdapter(String format) {
         this.formatter = new SimpleDateFormat(format);
     }
 

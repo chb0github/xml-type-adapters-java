@@ -1,8 +1,8 @@
 package org.bongiorno.dto.typeadapters.java;
 
-import java.lang.String;import java.text.SimpleDateFormat;
+import java.lang.String;
 
-public class LocalDateAsDateAdapter extends AbstractDateAdapter {
+public class LocalDateAsDateAdapter extends DefaultDateAdapter {
 
 
     public LocalDateAsDateAdapter(){

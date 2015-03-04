@@ -1,6 +1,6 @@
 package org.bongiorno.dto.typeadapters.java;
 
-public class LocalTimeAsDateAdapter extends AbstractDateAdapter {
+public class LocalTimeAsDateAdapter extends DefaultDateAdapter {
 
 
     public LocalTimeAsDateAdapter(){

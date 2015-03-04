@@ -2,8 +2,11 @@ package org.bongiorno.dto.typeadapters.java;
 
 import org.junit.Test;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
@@ -44,6 +47,23 @@ public class AdapterJavaTest {
 
         Date resultDate = adapter.unmarshal(expectedString);
         assertEquals(expectedDate,resultDate);
+    }
+
+    @Test
+    public void testCalendar() throws Exception {
+        String expectedString = "201311290000";
+
+        CalendarAdapter adapter = new CalendarAdapter();
+
+        Calendar expected = new GregorianCalendar(2013,12,29,0,0);
+        expected.setTimeZone(TimeZone.getTimeZone("UTC"));
+
+        Calendar result = adapter.unmarshal(expectedString);
+        assertEquals(expected,result);
+
+        String resultString = adapter.marshal(expected);
+        assertEquals(expectedString,resultString);
+
     }
 
 }
